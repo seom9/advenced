@@ -12,7 +12,7 @@
 먼저 프로토타입 버전을 개발해 보자.
 아마 코드를 모두 작성하고 테스트 코드까지 실행해 보아야 어떤 것을 하는지 감이 올 거싱다.
 
-먼저 로그 추적기를 위한 기반 데이터를 가지고 있는 TraceId, TraceStatus 클래스를 만들어 보자.\
+먼저 로그 추적기를 위한 기반 데이터를 가지고 있는 TraceId, TraceStatus 클래스를 만들어 보자.\ 
 
 ```java
 package hello.advanced.trace;
