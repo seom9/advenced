@@ -9,6 +9,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloTraceV1 {
 
+    // 실제 로그를 시작하고 종료하는 기능 정도 만족
+    // 싱글톤으로 사용하기 위해 bean 등록
+
     private static final String START_PREFIX = "-->";
     private static final String COMPLETE_PREFIX = "<--";
     private static final String EX_PREFIX = "<X-";
@@ -40,6 +43,11 @@ public class HelloTraceV1 {
         }
     }
 
+    // level = 0
+    // level = 1 | -->
+    // level = 2 |  | -->
+
+    // level = 2
     private static String addSpace(String prefix, int level) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < level; i++) {
