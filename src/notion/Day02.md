@@ -62,3 +62,5 @@ public class TraceId {
 로그 추적기는 트랜잭션 ID 와 깊이를 표현하는 방법이 필요하다.
 여기서는 트랜잭션 ID 와 깊이를 표현하는 level 을 묶어서 TraceId 라는 개념을 만들었다.
 TraceId 는 단순히 id (트랜잭션 ID) 와 level 정보를 가지고 있다.
+
+
