@@ -22,8 +22,9 @@ public class HelloTraceV2 {
     }
 
     // V1 에서 변경된 부분
+    // 기존 TraceId 에서 CreateNextId 를 통해 다음 레벨을 구함
     public TraceStatus beginSync(TraceId beforeTraceId, String message) {
-        //TraceId traceId = new TraceId();
+//        TraceId traceId = new TraceId();
         TraceId nextId = beforeTraceId.createNextId();
         Long startTimeMs = System.currentTimeMillis();
         log.info("[{}] {}{}", nextId.getId(), addSpace(START_PREFIX, nextId.getLevel()), message);
